@@ -1,5 +1,5 @@
 const flyLittleToucan = (e) => {
-  if (e.keyCode == 84) {
+  if (e.keyCode == 84 && e.altKey == true && e.ctrlKey == true) {
     const toucanDiv = document.createElement("div");
     toucanDiv.classList.add("toucan-div");
     document.body.prepend(toucanDiv);

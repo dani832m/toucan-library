@@ -17,7 +17,7 @@
 
 ## About
 
-**Toucan Library** is a small CSS and JavaScript library that can easily be integrated into any web project. The library allows the developer to include fun UI elements and Easter eggs, making even the most boring website just a little more fun. Development of the library started in May 2020 and the first release was published in June 2020.
+**Toucan Library** is a small CSS and JavaScript library that can easily be integrated into any web project. The library allows the developer to include UI elements and Easter eggs, making even the most boring website just a little more fun. Development of the library started in May 2020 and the first release was published in June 2020.
 
 ## Getting started
 
@@ -30,7 +30,7 @@ There are two ways you can implement the **Toucan Library** for your project:
 
 Download the _toucan-library_ folder and place it at the root of your file structure along with your index file.
 
-Include stylesheet in the head section as shown below
+Include stylesheet in the head section as shown below:
 
 ```html
 <head>
@@ -38,7 +38,7 @@ Include stylesheet in the head section as shown below
 </head>
 ```
 
-Place the script immediately before the body tag closes as shown below
+Place the script immediately before the body tag closes as shown below:
 
 ```html
 <body>
@@ -49,7 +49,7 @@ Place the script immediately before the body tag closes as shown below
 
 ### Use npm to install
 
-If you have Node.js installed, you can download **Toucan Library** using npm as shown below
+If you have Node.js installed, you can download **Toucan Library** using npm as shown below:
 
 ```bash
 npm install toucan-library

@@ -1,7 +1,7 @@
 <div align="center">
    <a href="https://github.com/dani832m/toucan-library">
       <img src="https://i.imgur.com/4fVxkbd.png" width="300" alt="Toucan Library" />
-   </a><br />
+   </a><br /><br />
    <img src="https://img.shields.io/github/stars/dani832m/toucan-library?style=social" alt="Stars" />
    <img src="https://img.shields.io/github/forks/dani832m/toucan-library?style=social" alt="Forks" />
    <img src="https://img.shields.io/github/downloads/dani832m/toucan-library/total" alt="Downloads" />
@@ -11,19 +11,51 @@
 # Table of contents
 
 - [About](#about)
-- [Documentation](#Documentation)
 - [Getting started](#getting-started)
+- [Documentation](#Documentation)
 - [Contributions](#contributions)
 
 ## About
 
-...
-
-## Documentation
-
-...
+**Toucan Library** is a small CSS and JavaScript library that can easily be integrated into any web project. The library allows the developer to include fun UI elements and Easter eggs, making even the most boring website just a little more fun. Development of the library started in May 2020 and the first release was published in June 2020.
 
 ## Getting started
+
+There are two ways you can implement the **Toucan Library** for your project:
+
+1. [Download the files as well as include stylesheet and script to your code.](#download-and-include-files)
+2. [Use npm to install the library.](#use-npm-to-install)
+
+### Download and include files
+
+Download the _toucan-library_ folder and place it at the root of your file structure along with your index file.
+
+Include stylesheet in the head section as shown below
+
+```html
+<head>
+  <link href="toucan-library/toucan-style.css" rel="stylesheet" />
+</head>
+```
+
+Place the script immediately before the body tag closes as shown below
+
+```html
+<body>
+  <!-- Your content -->
+  <script src="toucan-library/toucan-script.js"></script>
+</body>
+```
+
+### Use npm to install
+
+If you have Node.js installed, you can download **Toucan Library** using npm as shown below
+
+```bash
+npm install toucan-library
+```
+
+## Documentation
 
 ...
 

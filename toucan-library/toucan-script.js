@@ -1,3 +1,6 @@
+/********** EASTER EGGS **********/
+
+// Flying noisy toucan
 const flyLittleToucan = (e) => {
   if (e.keyCode == 84 && e.altKey == true && e.ctrlKey == true) {
     const toucanDiv = document.createElement("div");

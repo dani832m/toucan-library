@@ -34,7 +34,7 @@ Include stylesheet in the head section as shown below:
 
 ```html
 <head>
-  <link href="toucan-library/toucan-style.css" rel="stylesheet" />
+  <link href="toucan-library/css/toucan-style.css" rel="stylesheet" />
 </head>
 ```
 
@@ -43,7 +43,7 @@ Place the script immediately before the body tag closes as shown below:
 ```html
 <body>
   <!-- Your content -->
-  <script src="toucan-library/toucan-script.js"></script>
+  <script src="toucan-library/js/toucan-script.js"></script>
 </body>
 ```
 
@@ -59,9 +59,26 @@ npm install toucan-library
 
 ### UI Elements
 
-...
+#### Sticky Navbar
+
+Tropic and responsive navigation with nice effects. Add class _'navbar'_ to a nav tag, div tag or whatever you want to make into a toucan navbar and create an unordered list with list items inside as shown below:
+
+```html
+<nav class="navbar">
+  <ul>
+    <li><a class="active" href="#">Home</a></li>
+    <li><a href="#">Articles</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">References</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</nav>
+```
 
 ### Easter Eggs
+
+#### Flying Noisy Toucan
 
 - Press CTRL + ALT + T and a noisy toucan will fly from the right to the left side of the screen.
 

@@ -46,3 +46,7 @@ body {
    display: flex;
    justify-content: flex-start;
 }
+
+.navbar-links {
+   text-decoration: none;
+}

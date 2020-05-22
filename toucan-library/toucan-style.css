@@ -30,3 +30,19 @@ body {
       transform: scale(0.3);
    }
 }
+
+.navbar {
+   position: sticky;
+   position: -webkit-sticky; /* Safari */
+   top: 0;
+   margin: 0;
+   padding: 0;
+   height: 1rem;
+   width: 100%;
+   background-color: rgb(255, 219, 52);
+}
+
+.navbar-links {
+   display: flex;
+   justify-content: flex-start;
+}

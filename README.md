@@ -84,4 +84,4 @@ Tropic and responsive navigation with nice effects. Add class _'navbar'_ to a na
 
 ## Contributions
 
-**Toucan Library** is an open source project developed under the MIT license, and you should be very welcome to contribute to the further development. Make a pull request with your contribution here on GitHub, and I will take a closer look.
+**Toucan Library** is an open source project developed under the MIT License, and you should be very welcome to contribute to the further development. Make a pull request with your contribution here on GitHub, and I will take a closer look.

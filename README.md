@@ -76,6 +76,18 @@ Tropic and responsive navigation with nice effects. Add class _'navbar'_ to a na
 </nav>
 ```
 
+#### Text Elements
+
+Exotic headings and paragraphs. Just add a class value:
+
+```html
+<h1 class="heading1">Heading 1</h1>
+<h2 class="heading2">Heading 2</h2>
+<h3 class="heading3">Heading 3</h3>
+<h4 class="heading4">Heading 4</h4>
+<p class="paragraph">Paragraph</p>
+```
+
 ### Easter Eggs
 
 #### Flying Noisy Toucan

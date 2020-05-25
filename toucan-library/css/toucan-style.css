@@ -1,5 +1,15 @@
+:root {
+   --heading-font: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
+   --content-font: Arial Narrow, Arial, sans-serif;
+   --light-yellow-color: rgb(255, 219, 52);
+   --dark-yellow-color: rgb(154, 148, 26);
+   --orange-color: rgb(255, 167, 0);
+}
+
 body {
    overflow-x: hidden !important;
+   margin: 0;
+   padding: 0;
 }
 
 /* Flying noisy toucan */
@@ -44,8 +54,9 @@ body {
    display: flex;
    justify-content: flex-start;
    align-items: center;
-   background-color: rgb(255, 219, 52);
-   border-bottom: 0.1rem rgb(154, 148, 26) solid;
+   background-color: var(--light-yellow-color);
+   border-bottom: 0.1rem var(--dark-yellow-color) solid;
+   box-shadow: 0 0.1rem 1rem var(--dark-yellow-color);
    overflow: hidden;
 }
 
@@ -63,15 +74,32 @@ body {
    display: inline-block;
    padding: 0.5rem 0.9rem 0.35rem;
    color: rgb(0, 0, 0);
-   font: normal 1.1rem Arial, Helvetica, sans-serif;
+   font: normal 1.1rem var(--heading-font);
+   transition: all 0.2s;
+   text-shadow: 0.05rem 0.05rem 0.2rem rgb(255, 255, 255);
 }
 
 .navbar a:hover:not(.active) {
-   background-color: rgb(255, 167, 0);
+   background-color: var(--orange-color);
    color: rgb(0, 0, 0);
+   padding: 0.5rem 0.8rem 0.35rem;
+   transform: scale(1.08);
 }
 
 .navbar .active {
    color: rgb(255, 255, 255);
-   background-color: rgb(154, 148, 26);
+   background-color: var(--dark-yellow-color);
+   text-shadow: 0.05rem 0.05rem 0.2rem rgb(0, 0, 0);
+}
+
+/* Text elements */
+.heading1,
+.heading2,
+.heading3,
+.heading4 {
+   font-family: var(--heading-font);
+}
+
+.paragraph {
+   font: normal 1rem var(--content-font);
 }

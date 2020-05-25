@@ -4,6 +4,7 @@
    --light-yellow-color: rgb(255, 219, 52);
    --dark-yellow-color: rgb(154, 148, 26);
    --orange-color: rgb(255, 167, 0);
+   --text-shadow: 0.05rem 0.05rem 0.2rem;
 }
 
 body {
@@ -89,7 +90,7 @@ body {
    color: rgb(0, 0, 0);
    font: normal 1.2rem var(--heading-font);
    transition: all 0.2s;
-   text-shadow: 0.05rem 0rem 0.2rem rgb(255, 255, 255);
+   text-shadow: var(--text-shadow) rgb(255, 255, 255);
 }
 
 .navbar .navbar-list .navbar-link:hover:not(.active) {
@@ -101,7 +102,7 @@ body {
 .navbar .navbar-list .active {
    color: rgb(255, 255, 255);
    background-color: var(--dark-yellow-color);
-   text-shadow: 0.05rem 0.05rem 0.2rem rgb(0, 0, 0);
+   text-shadow: var(--text-shadow) rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 400px) {
@@ -131,8 +132,31 @@ body {
 .heading3,
 .heading4 {
    font-family: var(--heading-font);
+   letter-spacing: 0.01rem;
+   padding: 0.3rem;
+   margin: 1.2rem 0 0;
+}
+
+.heading1 {
+   font-size: 2.4rem;
+}
+
+.heading2 {
+   font-size: 2rem;
+}
+
+.heading3 {
+   font-size: 1.6rem;
+}
+
+.heading4 {
+   font-size: 1.2rem;
 }
 
 .paragraph {
    font: normal 1rem var(--content-font);
+   line-height: 1.5rem;
+   letter-spacing: 0.03rem;
+   padding: 0.3rem;
+   margin: 0.1rem;
 }

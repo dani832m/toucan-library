@@ -61,24 +61,25 @@ npm install toucan-library
 
 #### Sticky Navbar
 
-Tropic and responsive navigation with nice effects. Add class _'navbar'_ to a nav tag, div tag or whatever you want to make into a toucan navbar and create an unordered list with list items inside as shown below:
+Tropic and responsive navigation with nice effects. Add class _'navbar'_ to a nav tag, div tag or whatever you want to make into a toucan navbar, place a div tag with the class _'navbar-toggle'_ immediately after the _'navbar'_ opens and create an unordered list called _'navbar-list'_ with the list items inside as shown below:
 
 ```html
 <nav class="navbar">
-  <ul>
-    <li><a class="active" href="#">Home</a></li>
-    <li><a href="#">Articles</a></li>
-    <li><a href="#">Products</a></li>
-    <li><a href="#">Gallery</a></li>
-    <li><a href="#">References</a></li>
-    <li><a href="#">About</a></li>
+  <div class="navbar-toggle">🟧</div>
+  <ul class="navbar-list">
+    <li><a class="navbar-link active" href="#">Home</a></li>
+    <li><a class="navbar-link" href="#">Articles</a></li>
+    <li><a class="navbar-link" href="#">Products</a></li>
+    <li><a class="navbar-link" href="#">Gallery</a></li>
+    <li><a class="navbar-link" href="#">References</a></li>
+    <li><a class="navbar-link" href="#">About</a></li>
   </ul>
 </nav>
 ```
 
 #### Text Elements
 
-Exotic headings and paragraphs. Just add a class value:
+Exotic headings and paragraphs. Just add one of the shown class values to your h or p tags:
 
 ```html
 <h1 class="heading1">Heading 1</h1>

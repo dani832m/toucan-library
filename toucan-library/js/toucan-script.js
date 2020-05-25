@@ -1,3 +1,16 @@
+/********** UI ELEMENTS **********/
+
+// Toggle navbar
+const toggleNavbar = () => {
+  if (document.querySelector(".navbar-list").style.display === "none") {
+    document.querySelector(".navbar-list").style.display = "flex";
+  } else {
+    document.querySelector(".navbar-list").style.display = "none";
+  }
+};
+
+document.querySelector(".navbar-toggle").addEventListener("click", toggleNavbar);
+
 /********** EASTER EGGS **********/
 
 // Flying noisy toucan

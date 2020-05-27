@@ -77,6 +77,17 @@ Tropic and responsive navigation with nice effects. Add class _'navbar'_ to a na
 </nav>
 ```
 
+#### Toucan Scrollbar
+
+Tired of the boring default scrollbar in your browser? Add a colorful toucan scrollbar to your body tag or wherever you want it. Just use the class _'.scrollbar'_ as shown below:
+
+```html
+<body class="scollbar">
+  <!-- Your content -->
+  <script src="toucan-library/js/toucan-script.js"></script>
+</body>
+```
+
 #### Text Elements
 
 Exotic headings and paragraphs. Just add one of the shown class values to your h or p tags:

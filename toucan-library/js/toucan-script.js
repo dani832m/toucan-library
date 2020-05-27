@@ -1,6 +1,6 @@
 /********** UI ELEMENTS **********/
 
-// Toggle navbar
+// Toggle Navbar
 const toggleNavbar = () => {
   if (document.querySelector(".navbar-list").style.display === "none") {
     document.querySelector(".navbar-list").style.display = "flex";
@@ -13,7 +13,7 @@ document.querySelector(".navbar-toggle").addEventListener("click", toggleNavbar)
 
 /********** EASTER EGGS **********/
 
-// Flying noisy toucan
+// Flying Noisy Toucan
 const flyLittleToucan = (e) => {
   if (e.keyCode == 84 && e.altKey == true && e.ctrlKey == true) {
     const toucanDiv = document.createElement("div");

@@ -1,129 +1,99 @@
 :root {
-   --heading-font: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
-   --content-font: Arial Narrow, Arial, sans-serif;
-   --light-yellow-color: rgb(255, 219, 52);
-   --dark-yellow-color: rgb(154, 148, 26);
-   --orange-color: rgb(255, 167, 0);
-   --text-shadow: 0.05rem 0.05rem 0.2rem;
+  --heading-font: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
+  --content-font: Arial Narrow, Arial, sans-serif;
+  --light-yellow-color: rgb(255, 219, 52);
+  --dark-yellow-color: rgb(154, 148, 26);
+  --orange-color: rgb(255, 167, 0);
+  --text-shadow: 0.05rem 0.05rem 0.2rem;
 }
 
 body {
-   overflow-x: hidden !important;
-   margin: 0;
-   padding: 0;
-}
-
-/* Flying noisy toucan */
-.flying-toucan-div {
-   position: relative;
-   z-index: 100;
-   width: 100%;
-   height: 0;
-}
-
-.flying-toucan-img {
-   position: absolute;
-   right: -14rem;
-   width: 14rem;
-   height: 15rem;
-   padding: 3rem 0;
-   margin: 0;
-   box-sizing: border-box;
-   animation: fly 8s;
-}
-
-@keyframes fly {
-   0% {
-      right: -14rem;
-      transform: scale(1);
-   }
-   100% {
-      right: 100%;
-      transform: scale(0.3);
-   }
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
 }
 
 /* Sticky navbar */
 .navbar {
-   position: sticky;
-   position: -webkit-sticky; /* Safari */
-   top: 0;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   background-color: var(--light-yellow-color);
-   border-bottom: 0.1rem var(--dark-yellow-color) solid;
-   box-shadow: 0 0.1rem 1rem var(--dark-yellow-color);
-   overflow-x: scroll;
-   overflow-y: hidden;
-   -ms-overflow-style: none;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-yellow-color);
+  border-bottom: 0.1rem var(--dark-yellow-color) solid;
+  box-shadow: 0 0.1rem 1rem var(--dark-yellow-color);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
 }
 
 .navbar::-webkit-scrollbar {
-   display: none;
+  display: none;
 }
 
 .navbar .navbar-toggle {
-   display: none;
-   cursor: pointer;
-   padding: 1rem 0;
-   font-size: 1.2rem;
+  display: none;
+  cursor: pointer;
+  padding: 1rem 0;
+  font-size: 1.2rem;
 }
 
 .navbar .navbar-list {
-   margin: 0;
-   padding: 0;
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
 }
 
 .navbar .navbar-list .navbar-link {
-   text-decoration: none;
-   display: inline-block;
-   padding: 0.7rem 1.2rem 0.6rem;
-   color: rgb(0, 0, 0);
-   font: normal 1.2rem var(--heading-font);
-   transition: all 0.2s;
-   text-shadow: var(--text-shadow) rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.7rem 1.2rem 0.6rem;
+  color: rgb(0, 0, 0);
+  font: normal 1.2rem var(--heading-font);
+  transition: all 0.2s;
+  text-shadow: var(--text-shadow) rgb(255, 255, 255);
 }
 
 .navbar .navbar-list .navbar-link:hover:not(.active) {
-   background-color: var(--orange-color);
-   color: rgb(0, 0, 0);
-   transform: scale(1.08);
+  background-color: var(--orange-color);
+  color: rgb(0, 0, 0);
+  transform: scale(1.08);
 }
 
 .navbar .navbar-list .active {
-   color: rgb(255, 255, 255);
-   background-color: var(--dark-yellow-color);
-   text-shadow: var(--text-shadow) rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  background-color: var(--dark-yellow-color);
+  text-shadow: var(--text-shadow) rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 400px) {
-   .navbar {
-      overflow: hidden;
-      flex-direction: column;
-   }
+  .navbar {
+    overflow: hidden;
+    flex-direction: column;
+  }
 
-   .navbar .navbar-toggle {
-      display: block;
-   }
+  .navbar .navbar-toggle {
+    display: block;
+  }
 
-   .navbar .navbar-list {
-      width: 100%;
-      flex-direction: column;
-   }
+  .navbar .navbar-list {
+    width: 100%;
+    flex-direction: column;
+  }
 
-   .navbar .navbar-list .navbar-link {
-      width: 100vw;
-      text-align: center;
-   }
+  .navbar .navbar-list .navbar-link {
+    width: 100vw;
+    text-align: center;
+  }
 }
 
 /* Text elements */
@@ -131,32 +101,77 @@ body {
 .heading2,
 .heading3,
 .heading4 {
-   font-family: var(--heading-font);
-   letter-spacing: 0.01rem;
-   padding: 0.3rem;
-   margin: 1.2rem 0 0;
+  font-family: var(--heading-font);
+  letter-spacing: 0.03rem;
+  padding: 0.3rem;
+  margin: 1.2rem 0 0;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .heading1 {
-   font-size: 2.4rem;
+  font-size: 2.4rem;
+  background-color: var(--orange-color);
+  background-image: linear-gradient(180deg, var(--light-yellow-color), var(--orange-color));
+  -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
 }
 
 .heading2 {
-   font-size: 2rem;
+  font-size: 2rem;
+  background-color: var(--light-yellow-color);
+  background-image: linear-gradient(120deg, var(--light-yellow-color), var(--dark-yellow-color));
+  -webkit-text-stroke: 0.04rem rgb(0, 0, 0);
 }
 
 .heading3 {
-   font-size: 1.6rem;
+  font-size: 1.6rem;
+  background-color: var(--dark-yellow-color);
 }
 
 .heading4 {
-   font-size: 1.2rem;
+  font-size: 1.2rem;
+  background-color: rgb(0, 0, 0);
+  background-image: linear-gradient(var(--dark-yellow-color), rgb(0, 0, 0));
 }
 
 .paragraph {
-   font: normal 1rem var(--content-font);
-   line-height: 1.5rem;
-   letter-spacing: 0.03rem;
-   padding: 0.3rem;
-   margin: 0.1rem;
+  font: normal 1rem var(--content-font);
+  line-height: 1.5rem;
+  letter-spacing: 0.03rem;
+  padding: 0.3rem;
+  margin: 0.1rem;
+}
+
+/* Flying noisy toucan */
+.flying-toucan-div {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 0;
+}
+
+.flying-toucan-img {
+  position: absolute;
+  right: -14rem;
+  width: 14rem;
+  height: 15rem;
+  padding: 3rem 0;
+  margin: 0;
+  box-sizing: border-box;
+  animation: fly 8s;
+}
+
+@keyframes fly {
+  0% {
+    right: -14rem;
+    transform: scale(1);
+  }
+  100% {
+    right: 100%;
+    transform: scale(0.3);
+  }
 }

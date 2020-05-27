@@ -47,6 +47,8 @@ Place the script immediately before the body tag closes as shown below:
 </body>
 ```
 
+That's it! Now you are ready to include UI Elements and Easter Eggs to your site 🤠
+
 ### Use npm to install
 
 If you have Node.js installed, you can download **Toucan Library** using npm as shown below:
@@ -54,6 +56,8 @@ If you have Node.js installed, you can download **Toucan Library** using npm as 
 ```bash
 npm install toucan-library
 ```
+
+Now the library should be placed right in your file structure 😎
 
 ## Documentation
 

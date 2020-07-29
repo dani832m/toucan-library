@@ -110,6 +110,10 @@ Exotic headings and paragraphs. Just add one of the shown class values to your h
 
 - Press CTRL + ALT + T and a noisy toucan will fly from the right to the left side of the screen.
 
+#### ASCII art in the console
+
+- Press CTRL + Spacebar and an artsy logo will appear in the console for a while.
+
 ## Contributions
 
 **Toucan Library** is an open source project developed under the MIT License, and you should be very welcome to contribute to the further development. Make a pull request with your contribution here on GitHub, and I will take a closer look.

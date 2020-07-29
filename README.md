@@ -17,7 +17,7 @@
 
 ## About
 
-**Toucan Library** is a small CSS and JavaScript library that can easily be integrated into any web project. The library allows the developer to include [UI Elements](#ui-elements) and [Easter Eggs](#easter-eggs), making even the most boring website just a little more fun. Development of the library started in May 2020 and the first release was published in June 2020.
+**Toucan Library** is a small CSS and JavaScript library that can easily be integrated into any web project. The library allows the developer to include [UI Elements](#ui-elements) and [Easter Eggs](#easter-eggs), making even the most boring website just a little more fun. It's stylish and clean, but the characteristics of the Toucan Library is its eye-catching colors and shapes. Development of the library started in May 2020 and the first release was published in August 2020.
 
 ## Getting started
 

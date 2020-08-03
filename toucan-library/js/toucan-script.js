@@ -68,3 +68,26 @@ const asciiToucan = (e) => {
 };
 
 window.addEventListener("keydown", asciiToucan);
+
+// Show Date and Time in Pop-up
+const showDateAndTime = () => {
+  const dateAndTimeObj = new Date();
+
+  const dateAndTimeDiv = document.createElement("div");
+  dateAndTimeDiv.classList.add("date-and-time-div");
+  document.body.prepend(dateAndTimeDiv);
+
+  const dateAndTimeParagraph = document.createElement("p");
+  dateAndTimeParagraph.classList.add("date-and-time-paragraph");
+  dateAndTimeParagraph.innerHTML = `Det er i dag den ${dateAndTimeObj.toLocaleDateString()} og klokken er ${dateAndTimeObj.toLocaleTimeString()}.`;
+  document.querySelector(".date-and-time-div").prepend(dateAndTimeParagraph);
+
+  setTimeout(() => {
+    dateAndTimeDiv.remove();
+  }, 7000);
+};
+
+// Test
+setTimeout(() => {
+  showDateAndTime();
+}, 2000);

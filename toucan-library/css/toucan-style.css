@@ -205,3 +205,14 @@ body {
     transform: scale(0.3);
   }
 }
+
+/* Date and Time Pop-up */
+.date-and-time-div {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+}
+
+.date-and-time-paragraph {
+}

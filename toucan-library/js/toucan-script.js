@@ -32,7 +32,12 @@ const flyLittleToucan = (e) => {
 
     // Click on Flying Noisy Toucan
     const flyingToucanClicked = () => {
-      console.log("Test");
+      const toucanClickedSound = document.createElement("audio");
+      toucanClickedSound.setAttribute("src", "toucan-library/sounds/toucan-clicked-sound.wav");
+
+      toucanDiv.remove();
+      toucanSound.pause();
+      toucanClickedSound.play();
     };
 
     document.querySelector(".flying-toucan-div").addEventListener("click", flyingToucanClicked);

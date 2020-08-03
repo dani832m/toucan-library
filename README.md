@@ -108,7 +108,7 @@ Exotic headings and paragraphs. Just add one of the shown class values to your h
 
 #### Flying Noisy Toucan
 
-- Press CTRL + ALT + T and a noisy toucan will fly from the right to the left side of the screen.
+- Press CTRL + ALT + T and a noisy toucan will fly from the right to the left side of the screen. Please don't shoot it!
 
 #### ASCII art in the console
 

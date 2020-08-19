@@ -70,24 +70,30 @@ const asciiToucan = (e) => {
 window.addEventListener("keydown", asciiToucan);
 
 // Show Date and Time in Pop-up
-const showDateAndTime = () => {
-  const dateAndTimeObj = new Date();
+let isFunctionAlreadyRunning = false;
 
-  const dateAndTimeDiv = document.createElement("div");
-  dateAndTimeDiv.classList.add("date-and-time-div");
-  document.body.prepend(dateAndTimeDiv);
+const showDateAndTime = (e) => {
+  if (e.keyCode == 48 && e.repeat == true) {
+    if (isFunctionAlreadyRunning == false) {
+      isFunctionAlreadyRunning = true;
 
-  const dateAndTimeParagraph = document.createElement("p");
-  dateAndTimeParagraph.classList.add("date-and-time-paragraph");
-  dateAndTimeParagraph.innerHTML = `Det er i dag den ${dateAndTimeObj.toLocaleDateString()} og klokken er ${dateAndTimeObj.toLocaleTimeString()}.`;
-  document.querySelector(".date-and-time-div").prepend(dateAndTimeParagraph);
+      const dateAndTimeObj = new Date();
 
-  setTimeout(() => {
-    dateAndTimeDiv.remove();
-  }, 7000);
+      const dateAndTimeDiv = document.createElement("div");
+      dateAndTimeDiv.classList.add("date-and-time-div");
+      document.body.prepend(dateAndTimeDiv);
+
+      const dateAndTimeParagraph = document.createElement("p");
+      dateAndTimeParagraph.classList.add("date-and-time-paragraph");
+      dateAndTimeParagraph.innerHTML = `<img class="mini-toucan-img" src="toucan-library/img/toucan-img.gif" alt="Mini toucan" /> Det er i dag <strong>d. ${dateAndTimeObj.toLocaleDateString()}</strong> og klokken er <strong>${dateAndTimeObj.toLocaleTimeString()}</strong> <img class="mini-toucan-img" src="toucan-library/img/toucan-img.gif" alt="Mini toucan" />`;
+      document.querySelector(".date-and-time-div").prepend(dateAndTimeParagraph);
+
+      setTimeout(() => {
+        dateAndTimeDiv.remove();
+        isFunctionAlreadyRunning = false;
+      }, 7000);
+    } else return;
+  } else return;
 };
 
-// Test
-setTimeout(() => {
-  showDateAndTime();
-}, 2000);
+window.addEventListener("keydown", showDateAndTime);

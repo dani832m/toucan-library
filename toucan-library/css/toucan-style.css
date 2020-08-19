@@ -211,8 +211,19 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  text-align: center;
+  background-color: var(--orange-color);
+  border-top: 0.1rem var(--dark-yellow-color) solid;
+  box-shadow: 0.1rem 0 1rem var(--dark-yellow-color);
 }
 
 .date-and-time-paragraph {
+  padding: 0 0 0.06rem;
+  font: normal 1.1rem var(--heading-font);
+  text-shadow: var(--text-shadow) rgb(255, 255, 255);
+}
+
+.date-and-time-paragraph .mini-toucan-img {
+  width: 2.2rem;
+  vertical-align: bottom;
 }

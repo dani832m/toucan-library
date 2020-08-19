@@ -114,6 +114,10 @@ Exotic headings and paragraphs. Just add one of the shown class values to your h
 
 - Press CTRL + Spacebar and an artsy logo will appear in the console for a while.
 
+#### Show Date and Time
+
+- Hold down the 0 key to show the current date and time.
+
 ## Contributions
 
-**Toucan Library** is an open source project developed under the MIT License, and you should be very welcome to contribute to the further development. Make a pull request with your contribution here on GitHub, and I will take a closer look.
+**Toucan Library** is an open source project developed under the MIT License, and you should be very welcome to contribute to the further development. Make a pull request with your contribution here on GitHub, and I will take a closer look. Don't be scared - it's all for fun and practice 🐵

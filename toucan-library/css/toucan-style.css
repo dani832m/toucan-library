@@ -176,6 +176,24 @@ body {
   margin: 0.1rem;
 }
 
+/* List Elements */
+.ul-list {
+  font: italic 1rem var(--content-font);
+  list-style: disc outside url("../img/toucan-li.gif");
+  color: var(--dark-yellow-color);
+  text-shadow: var(--text-shadow) rgb(255, 255, 255);
+  line-height: 1.5rem;
+  padding: 0 4rem 1rem;
+  display: inline-block;
+}
+
+.ul-list .toucan-li {
+  margin: 0.3rem 0;
+  padding: 0.05rem 0.4rem;
+  background: radial-gradient(circle, rgba(255, 167, 0, 0.2) 0%, rgba(255, 219, 52, 0.1) 100%);
+  border-radius: 0.7rem 0;
+}
+
 /* Flying Noisy Toucan */
 .flying-toucan-div {
   position: relative;

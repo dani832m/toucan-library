@@ -51,7 +51,7 @@ That's it! Now you are ready to include UI Elements and Easter Eggs to your site
 
 ### Use npm to install
 
-If you have Node.js and NPM installed, you can download **Toucan Library** using npm as shown below:
+If you have _Node.js_ and _npm_ installed, you can also download **Toucan Library** as shown below:
 
 First, initialize your project (If you haven't already done so):
 

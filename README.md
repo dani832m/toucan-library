@@ -12,7 +12,7 @@
 
 - [About](#about)
 - [Getting started](#getting-started)
-- [Documentation](#Documentation)
+- [Documentation](#documentation)
 - [Contributions](#contributions)
 
 ## About
@@ -51,13 +51,23 @@ That's it! Now you are ready to include UI Elements and Easter Eggs to your site
 
 ### Use npm to install
 
-If you have Node.js installed, you can download **Toucan Library** using npm as shown below:
+If you have Node.js and NPM installed, you can download **Toucan Library** using npm as shown below:
+
+First, initialize your project (If you haven't already done so):
+
+```bash
+npm init
+```
+
+Answer the questions in your terminal and then install the package:
 
 ```bash
 npm install toucan-library
 ```
 
-Now the library should be placed right in your file structure 😎
+Now the library should be placed in your _'node_modules'_ folder 😎
+
+You can include it into your files in the same way as described in [the previous section](#download-and-include-files), just remember that the path should now point to the folder in your node modules.
 
 ## Documentation
 
